@@ -1,6 +1,7 @@
 # To run this code, be sure your current working directory
 # is the same as where this file is located and then run:
 # ruby 2-conditionals.rb
+# slash is a directory
 
 # EXERCISE
 # Continue your craps program (starting code below).
@@ -30,3 +31,11 @@ puts die2
 # 3. create a variable for the total and write it to the screen
 total = die1 + die2
 puts "The total is: #{total}"
+
+if total == 7 || total == 11
+    puts "YOU WIN!"
+elsif total == 2 || total==3 || total==12
+    puts "YOU LOSE"
+else
+    puts "THE POINT IS #{total}"
+end
